@@ -23,7 +23,7 @@ const parser = new Parser({
 
 // Database setup with PostgreSQL (or SQLite fallback)
 let db;
-const isDev = process.env.NODE_ENV !== "production";
+const isDev = true;
 
 async function initDb() {
   if (isDev && !process.env.DATABASE_URL) {
